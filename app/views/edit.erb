@@ -1,0 +1,19 @@
+
+
+
+<br>
+<form action="/articles/<%= @article.id %>" method="post">
+
+    <input type="hidden" value="patch" name="_method"
+
+
+    <label for="title">Title:</label><br>
+    <input type="text" id="title" name="article[title]" value="<%= @article.title %>"><br>
+
+    <label for="content">Content:</label><br>
+    <input type="text" id="content" name="article[content]" value="<%= @article.content %>"><br>
+
+    <input type="submit" id="submit" value="Edit Article">
+
+</form>
+
